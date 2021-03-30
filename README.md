@@ -254,3 +254,5 @@ The sentiment analysis is the first page that pops up when you click the analyze
 
 
 ## INDIVIDUAL
+### Introduction Note:
+- Like assignment 3 the features implemented are accessible by navigating to the conversation analysis page where each can be used after having a conversation with the bot.
