@@ -258,11 +258,11 @@ For setup, refer to [Getting Started](#getting-started).
 ### Introduction Note:
 Like assignment 3 the features implemented are accessible by navigating to the conversation analysis page where each can be used after having a conversation with the bot.
 
-###APIs added
-####Google Translate:
+### APIs added
+#### Google Translate:
 - https://www.npmjs.com/package/@vitalets/google-translate-api
-####Wikipedia:
+#### Wikipedia:
 - https://www.npmjs.com/package/@cytrus-re/wikipediajs
-####Undefined:
+#### Undefined:
 
-####Undefined:
+#### Undefined:
