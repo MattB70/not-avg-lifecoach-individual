@@ -1,6 +1,7 @@
 # NOT YOUR AVERAGE LIFE COACH
 
 ### Navigation
+  - [INDIVIDUAL](#INDIVIDUAL)
   - [Getting Started](#getting-started)
   - [Project Description](#project-description)
   - [Project Limitations](#project-limitations)
@@ -250,3 +251,5 @@ The sentiment analysis is the first page that pops up when you click the analyze
 - Created Level 0/ Level 1 DFDs
 - Created Videos
 
+
+## INDIVIDUAL
