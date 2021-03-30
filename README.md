@@ -258,11 +258,8 @@ For setup, refer to [Getting Started](#getting-started).
 ### Introduction Note:
 Like Assignment 3 the features implemented are accessible by navigating to the conversation analysis page where each can be used after having a conversation with the bot as a way to analyse the conversation deeper. This method also makes testing significantly easier as experiences by both the group as well as TAs in Assignment 3.
 
-### APIs added
+### APIs added (2)
 #### Google Translate:
 - https://www.npmjs.com/package/@vitalets/google-translate-api
 #### Wikipedia:
 - https://www.npmjs.com/package/@cytrus-re/wikipediajs
-#### Undefined:
-
-#### Undefined:
