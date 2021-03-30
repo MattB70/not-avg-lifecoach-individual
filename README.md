@@ -256,7 +256,7 @@ The sentiment analysis is the first page that pops up when you click the analyze
 ## INDIVIDUAL
 For setup, refer to [Getting Started](#getting-started).
 ### Introduction Note:
-Like assignment 3 the features implemented are accessible by navigating to the conversation analysis page where each can be used after having a conversation with the bot.
+Like Assignment 3 the features implemented are accessible by navigating to the conversation analysis page where each can be used after having a conversation with the bot as a way to analyse the conversation deeper. This method also makes testing significantly easier as experiences by both the group as well as TAs in Assignment 3.
 
 ### APIs added
 #### Google Translate:
