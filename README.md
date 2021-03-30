@@ -1,7 +1,8 @@
 # NOT YOUR AVERAGE LIFE COACH
 
 ### Navigation
-  - [INDIVIDUAL](#INDIVIDUAL)
+  - [INDIVIDUAL PROJECT DOCUMENTATION](#INDIVIDUAL)
+
   - [Getting Started](#getting-started)
   - [Project Description](#project-description)
   - [Project Limitations](#project-limitations)
