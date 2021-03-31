@@ -43,15 +43,19 @@ export default {
     if (this.$store.state.conversation)
       this.conversation = this.$store.state.conversation;
     this.Wiki();
+    this.loaded = true;
   },
   methods: {
     Wiki() {
+      
+      /*
       if (this.conversation != null) {
         for (var i = 0; i < this.conversation.length; i++) {
 
           this.conversation[i].wiki = "test";
         }
       }
+      */
     }
   }
 };
