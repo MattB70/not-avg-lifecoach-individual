@@ -261,7 +261,7 @@ Like Assignment 3 the features implemented are accessible by navigating to the c
 ### APIs added (2)
 #### Google Translate:
 https://www.npmjs.com/package/translate
-Usage:
+#### Usage:
 - Chat with the bot
 - Click Analyse (top right)
 - Click Translate (bottom right)
