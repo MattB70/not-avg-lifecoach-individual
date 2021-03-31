@@ -3,34 +3,40 @@
     <h3>
       Wikipedia
     </h3>
+    <div v-if="loaded">
+      <div v-if="conversation">
+        <b-list-group>
+          <div v-for="message in conversation" :key="message.index">
+            <hr />
+            <b-list-group-item>
+              <h5 align="left">{{ message.chatStyle }}</h5>
+              <div align="left" style="font-weight: 600; color: gray;">Input:</div>
+              <p align="left" style="font-size: 150%;">{{ message.text }}</p>
+              <div align="left" style="font-weight: 600; color: gray;">Wiki Result:</div>
+              <p align="left" style="font-size: 150%;">{{ message.wiki }}</p>
+            </b-list-group-item>
+          </div>
+        </b-list-group>
+        <hr />
+      </div>
 
-    <div v-if="conversation">
-      <b-list-group>
-        <div v-for="message in conversation" :key="message.index">
-          <hr />
-          <b-list-group-item>
-            <h5 align="left">{{ message.chatStyle }}</h5>
-            <div align="left" style="font-weight: 600; color: gray;">Input:</div>
-            <p align="left" style="font-size: 150%;">{{ message.text }}</p>
-            <div align="left" style="font-weight: 600; color: gray;">Wiki Result:</div>
-            <p align="left" style="font-size: 150%;">{{ message.wiki }}</p>
-          </b-list-group-item>
-        </div>
-      </b-list-group>
-      <hr />
+      <div v-else>
+        Please chat.
+      </div>
     </div>
-
     <div v-else>
-      Please chat.
+      Loading...
     </div>
   </div>
+
 </template>
 
 <script>
 export default {
   data() {
     return {
-      conversation: undefined
+      conversation: undefined,
+      loaded: false
     };
   },
   created() {
@@ -42,7 +48,7 @@ export default {
     Wiki() {
       if (this.conversation != null) {
         for (var i = 0; i < this.conversation.length; i++) {
-          
+
           this.conversation[i].wiki = "test";
         }
       }

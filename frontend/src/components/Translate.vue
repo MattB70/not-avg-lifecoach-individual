@@ -3,13 +3,12 @@
     <h3>
       Translate
     </h3>
-
     <div v-if="loaded">
-
+      <button v-on:click="ret">Return</button>
       <div v-if="conversation">
+        <div align="right" style="color: rgb(150, 100, 150);">{{selected}}</div>
         <b-list-group>
           <div v-for="message in conversation" :key="message.index">
-            <hr />
             <b-list-group-item>
               <h5 align="left">{{ message.chatStyle }}</h5>
               <div align="left" style="font-weight: 600; color: gray;">Original:</div>
@@ -19,17 +18,34 @@
             </b-list-group-item>
           </div>
         </b-list-group>
-        <hr />
+        <hr/>
       </div>
 
       <div v-else>
         Please chat.
       </div>
+    </div>
+
+    <div v-else>
+
+      Select a Language to translate conversation to.
+      <br>
+      <select v-model="selected">
+        <option>French</option>
+        <option>Chinese</option>
+        <option>Spanish</option>
+        <option>Hindi</option>
+        <option>German</option>
+        <option>Italian</option>
+        <option>Arabic</option>
+        <option>Japanese</option>
+        <option>Korean</option>
+        <option>Russian</option>
+      </select>
+      <button v-on:click="start">Translate</button>
 
     </div>
-    <div v-else>
-      Loading...
-    </div>
+
 
   </div>
 </template>
@@ -40,16 +56,24 @@ export default {
     return {
       conversation: undefined,
       iterator: 0,
-      loaded: false
+      loaded: false,
+      selected: ''
     };
   },
   created() {
     if (this.$store.state.conversation){
       this.conversation = this.$store.state.conversation;
-      this.Translate();
     }
   },
   methods: {
+    start: function () {
+      if(this.selected != null || this.selected != '' || this.selected != ' ')
+        this.Translate();
+    },
+    ret: function () {
+      this.loaded = false;
+      this.iterator = 0;
+    },
     Translate() {
       const translate = require("translate");
       translate.engine = "libre";
@@ -57,12 +81,11 @@ export default {
       {
         for (var i = 0; i < this.conversation.length; i++)
         {
-          translate(this.conversation[i].text, "fr").then(value => this.SetTranslation(value));
+          translate(this.conversation[i].text, this.selected).then(value => this.SetTranslation(value));
         }
       }
     },
     SetTranslation(value) {
-      console.log(this.iterator +":"+ value);
       this.conversation[this.iterator].translation = value;
       this.iterator++;
       if(this.iterator >= this.conversation.length)
