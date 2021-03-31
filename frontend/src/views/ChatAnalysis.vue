@@ -42,10 +42,10 @@
           >Synonym Recognition</b-nav-item
         >
         <b-nav-item @click="showTranslate"
-          ><span class="new">Translate</span></b-nav-item
+          ><span class="new">Translate</span> <span class="newFlag">NEW</span></b-nav-item
         >
         <b-nav-item @click="showWikipedia"
-          ><span class="new">Wikipedia</span></b-nav-item
+          ><span class="new">Wikipedia</span> <span class="newFlag">NEW</span></b-nav-item
         >
       </b-navbar-nav>
     </b-navbar>
@@ -172,5 +172,11 @@ export default {
   color: rgb(244, 210, 255);
   font-weight: 600;
   font-style: italic;
+}
+.newFlag{
+  color: #ffffff;
+  font-weight: 1000;
+  font-size: 70%;
+  text-shadow: 0px 0px 4px #ee6dff;
 }
 </style>
