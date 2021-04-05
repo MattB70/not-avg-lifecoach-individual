@@ -32,6 +32,7 @@
 </template>
 
 <script>
+import wikipedia from "wikipedia";
 export default {
   data() {
     return {
@@ -46,16 +47,31 @@ export default {
     this.loaded = true;
   },
   methods: {
+    // Gets Wiki data for each word in the conversation
     Wiki() {
-      
-      /*
-      if (this.conversation != null) {
-        for (var i = 0; i < this.conversation.length; i++) {
-
-          this.conversation[i].wiki = "test";
+      if (this.conversation != null)
+      {
+        for (var i = 0; i < this.conversation.length; i++)
+        {
+          //Split input into induvidual words:
+          var temp = this.conversation[i].text.replace(".", " ").split(" ");
+          for (var j = 0; j < temp.length; j++)
+          {
+            if(temp[j].length > 0)
+            {
+              //console.log(j+": "+temp[j]);
+              wikipedia.page(temp[j]).then((data) => {
+                data.summary().then((data) => 
+                  this.SetWiki(data)) // Send wiki data to SetWiki
+              })
+            }
+          }
         }
       }
-      */
+    },
+    // Sets Wiki data to be accessed and displayed
+    SetWiki(value) {
+      console.log(value.title);
     }
   }
 };

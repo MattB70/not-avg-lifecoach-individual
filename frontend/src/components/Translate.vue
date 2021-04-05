@@ -51,6 +51,7 @@
 </template>
 
 <script>
+import translate from "translate";
 export default {
   data() {
     return {
@@ -75,7 +76,6 @@ export default {
       this.iterator = 0;
     },
     Translate() {
-      const translate = require("translate");
       translate.engine = "libre";
       if (this.conversation != null)
       {
