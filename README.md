@@ -258,7 +258,10 @@ For setup, refer to [Getting Started](#getting-started).
 ### Introduction Note:
 Like Assignment 3 the features implemented are accessible by navigating to the conversation analysis page where each can be used after having a conversation with the bot as a way to analyse the conversation deeper. This method also makes testing significantly easier as experiences by both the group as well as TAs in Assignment 3.
 
+
+
 ### APIs added (2)
+
 #### Google Translate:
 https://www.npmjs.com/package/translate
 ##### Usage:
@@ -267,10 +270,13 @@ https://www.npmjs.com/package/translate
 - Click Translate (bottom right)
 - Choose a language to translate the conversation to (dropdown)
 - Click Translate (button)
+
 ##### Example Output:
+
 <div align="right">
   <img height="300" src="./Documentation/img/TranslateExample.png">
 </div> 
+
 #### Wikipedia:
 https://www.npmjs.com/package/wikipedia
 ##### Usage:
@@ -278,7 +284,9 @@ https://www.npmjs.com/package/wikipedia
 - Click Analyse (top right)
 - Click Wikipedia (bottom right)
 - Page will list all wikipedia articles that relate with the conversation. Clicking a title will link to the article, and an article summary is also visible.
+
 ##### Example Output:
+
 <div align="right">
   <img height="600" src="./Documentation/img/WikiExample.PNG">
 </div> 
