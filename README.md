@@ -267,6 +267,10 @@ https://www.npmjs.com/package/translate
 - Click Translate (bottom right)
 - Choose a language to translate the conversation to (dropdown)
 - Click Translate (button)
+##### Example Output:
+<div align="right">
+  <img height="600" src="./Documentation/img/TranslateExample.PNG">
+</div> 
 #### Wikipedia:
 https://www.npmjs.com/package/wikipedia
 ##### Usage:
@@ -274,6 +278,7 @@ https://www.npmjs.com/package/wikipedia
 - Click Analyse (top right)
 - Click Wikipedia (bottom right)
 - Page will list all wikipedia articles that relate with the conversation. Clicking a title will link to the article, and an article summary is also visible.
+##### Example Output:
 <div align="right">
   <img height="600" src="./Documentation/img/WikiExample.PNG">
 </div> 
