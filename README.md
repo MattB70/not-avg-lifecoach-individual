@@ -275,5 +275,5 @@ https://www.npmjs.com/package/wikipedia
 - Click Wikipedia (bottom right)
 - Page will list all wikipedia articles that relate with the conversation. Clicking a title will link to the article, and an article summary is also visible.
 <div align="right">
-  <img height="500" src="./Documentation/img/WikiExample.PNG">
+  <img height="600" src="./Documentation/img/WikiExample.PNG">
 </div> 
