@@ -51,7 +51,6 @@
     </b-navbar>
   </div>
 </template>
-
 <script>
 import SentimentAnalysis from "@/components/SentimentAnalysis.vue";
 import NamedEntityRecognition from "../components/NamedEntityRecognition.vue";

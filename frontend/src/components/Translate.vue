@@ -6,7 +6,7 @@
     <div v-if="loaded">
       <button v-on:click="ret">Return</button>
       <div v-if="conversation">
-        <div align="right" style="color: rgb(150, 100, 150);">{{selected}}</div>
+        <div align="right" style="color: rgb(120, 80, 0);">{{selected}}</div>
         <b-list-group>
           <div v-for="message in conversation" :key="message.index">
             <b-list-group-item>

@@ -15,18 +15,18 @@
             <table style="width: 100%; margin-top: 1em;">
               <tr>
                 <th
-                  style="width:50%; text-align:left; background-color: rgb(236, 220, 255);"
+                  style="width:50%; text-align:left; background-color: rgb(236, 220, 200);"
                 >
                   Value
                 </th>
                 <th
-                  style="width:50%; text-align:left; background-color: rgb(236, 220, 255);"
+                  style="width:50%; text-align:left; background-color: rgb(236, 220, 200);"
                 >
                   Type
                 </th>
               </tr>
               <tr
-                style="color: rgb(116, 0, 170);"
+                style="color: rgb(120, 80, 0);"
                 v-for="entity in message.namedEntities"
                 :key="entity.index"
               >
