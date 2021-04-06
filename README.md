@@ -269,7 +269,7 @@ https://www.npmjs.com/package/translate
 - Click Translate (button)
 ##### Example Output:
 <div align="right">
-  <img height="600" src="./Documentation/img/TranslateExample.PNG">
+  <img height="600" src="./Documentation/img/TranslateExample.png">
 </div> 
 #### Wikipedia:
 https://www.npmjs.com/package/wikipedia
