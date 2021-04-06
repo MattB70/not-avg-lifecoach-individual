@@ -274,3 +274,6 @@ https://www.npmjs.com/package/wikipedia
 - Click Analyse (top right)
 - Click Wikipedia (bottom right)
 - Page will list all wikipedia articles that relate with the conversation. Clicking a title will link to the article, and an article summary is also visible.
+<div align="right">
+  <img height="300" src="./Documentation/img/SoftwareArchitecture-Container-View.png">
+</div> 
